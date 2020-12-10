@@ -1,0 +1,110 @@
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+div.container {
+	height: 90vh;
+	width: 90vw;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: auto;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+#container-canvas {
+	width: 100%;
+	height: 92%;
+	background: #a4b1ba;
+	padding: 10px 10px 0px 10px;	/* top-right-bottom-left */
+	border-radius: 4px 4px 0 0;
+}
+#myCanvas {
+	background: #0d2e46;
+}
+div.panel-control {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 8%;
+	min-height: 32px;
+	padding: 0 10px;
+	background: #a4b1ba;
+	border-radius: 0 0 4px 4px;
+}
+.panel-control select {
+	flex: 0 1 18%;
+
+	min-width: 100px;
+	height: 22px;
+	outline: none;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.panel-control .botones {
+	flex: 0 1 15%;
+	min-width: 170px;
+	display: flex;
+	justify-content: space-evenly;
+	/*border: 1px solid red;*/
+}
+.panel-control .sliders {
+	flex: 0 1 25%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	/*border: 1px solid red;*/
+}
+.panel-control .msg {
+	flex: 1 1 auto;
+	text-align: right;
+	/*border: 1px solid red;*/
+}
+.botones button {
+	height: 22px;
+	width: 50px;
+	transition: background .2s ease-in-out;
+	cursor: pointer;
+	outline: none;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.sliders .slider {
+	display: flex;
+	align-items: center;
+}
+.sliders .slider i {
+	padding: 0px 6px;
+	font-size: 18px;
+	color: #333;
+}
+.sliders .slider input {
+	width: 100px;
+}
+
+/* styles */
+.btn-green {
+	background: #4caf50;
+	color: #fff !important;
+}
+.btn-green:hover {
+	background: #59b75c;
+}
+.btn-red {
+	background: #f44336;
+	color: #fff !important;
+}
+.btn-red:hover {
+	background: #f55549;
+}
+.btn-orange {
+	background: orange;
+	color: #fff !important;
+}
+.btn-orange:hover {
+	background: darkorange;
+}

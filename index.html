@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Juego de la vida</title>
+
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
+	
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="container-canvas">
+			<canvas id="myCanvas" width="100" height="100"></canvas>
+		</div>
+		<div class="panel-control">
+			<select id="select" class="btn">
+				<option value="rip-conway" selected>XKCD RIP John Conway</option>
+				<option value="spaceship">Lightweight spaceship</option>
+				<option value="gosper-gun">Gosper Glider Gun</option>
+			</select>
+			<div class="botones">
+				<button id="clear-button" class="btn">Clear</button>
+				<button id="next-button" class="btn">Next</button>
+				<button id="start-button" class="btn btn-green">Start</button>
+			</div>
+			<div class="sliders">
+				<div class="slider">
+					<i class="zmdi zmdi-time-interval"></i>
+					<input id="speed-range" type="range" min="-530" max="-20" step="50" value="-280">
+				</div>
+				<div class="slider">
+					<i class="zmdi zmdi-grid"></i>
+					<input id="zoom-range" type="range" min="4" max="14" value="11">
+				</div>
+			</div>
+			<div id="num-generacion" class="msg">0</div>
+		</div>
+	</div>
+	<!-- JAVASCRIPT files -->
+	<!-- <script src="assets/js/main.js"></script> -->
+</body>
+</html>
